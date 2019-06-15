@@ -25,7 +25,7 @@ class ListarPeliculas extends Component {
 					this.setState({ peliculas: res.data, request: false });
 			}).catch(err => {
 				// if (this._isMounted) 
-					this.setState({ error: err, request: false });
+					this.setState({ error: err.toString(), request: false });
 			});
 	}
 
